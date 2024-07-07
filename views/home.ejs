@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <div class="Home">
+        <h2>
+            <a href="/">Home</a>
+        </h2>
+        <form action="/memory/searchTag" method="get">
+            <input class="input-box" type="text" name="search_tag" placeholder="Search image with tags" required>
+            <br>
+            <input type="submit" class="search" value="Search">
+            <br>
+            
+        </form>
+        <div id="collection-list-container">
+            <ul id="unordered-list">
+            </ul>
+        </div>
+        <br><br>
+        <hr>
+        <% if (locals.user) { %>
+            <div id="user-id" style="display:none">
+                <%=locals.user.id%>
+            </div>
+            <div id="create-collection">
+                <br>
+                <p>
+                    Add Another Collection
+                </p>
+                
+                <input id="collection-name" class="collection-name" type="text" name="collectionName" placeholder="Name the collection" required>
+                <input id="collection-description" class="collection-description" type="textarea" name="note" placeholder="Add Description" required>
+                <input id="create-collection-btn" class="submit" type="submit" value="Add collection">
+            </div>
+        <% } %>    
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/home_collection.js"></script>
+</body>
+
+</html>

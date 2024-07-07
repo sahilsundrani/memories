@@ -1,0 +1,36 @@
+<html>
+    <title>
+        Memories | Sign In
+    </title>
+    <head>
+        <link rel="stylesheet" href="/css/sign_in.css">
+    </head>
+    <body>
+        <div class="Sign-In">
+            <br>
+            <h1>
+                Sign-In
+            </h1>
+            <form action="/users/create-session" method="post">
+                <input type="email" name="email" id="email" class="input-box" placeholder="Enter your email" required>
+                <br><br>
+                <input type="password" name="password" id="password" class="input-box" placeholder="Enter your password" required>
+                <br><br>
+                <input type="submit" class="submit" value="Submit">
+            </form>
+            
+            <hr>
+            <br>
+            <p>
+                <strong>
+                    New to platform?
+                </strong>
+                <br><br>
+                <a href="/users/sign-up">
+                    Sign Up
+                </a>
+            </p>
+        </div>
+
+    </body>
+</html> 

@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #c6f2b1;
+}
+.box{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.search::after{
+    content: "";
+    display: table;
+    clear: both;
+
+} 
+ 
+img{
+    width: 100%;
+    height: 310px;
+    border-radius: 15px;
+}
+.search li{
+    list-style: none;
+}
+a{
+    width: 100%;
+    height: 88%;
+    text-decoration: none;
+}
+#MyCollection{
+    background-color: #E7F6F2;
+    width: 18%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+}
+#MyCollection:hover{
+    background: #A5C9CA;
+}
+#MyCollection:active{
+    background: #395B64;
+}   
+a{
+    color: #2C3333;   
+}
+.button{
+    display:inline-flex;
+    height: 50px;
+    padding: 0;
+    background: #E7F6F2;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 8px 0;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    border: 2px solid black;
+}
+
+.button:hover{
+    background: #A5C9CA;
+
+}
+.button:active{
+    background: #395B64;
+}
+
+.button_text{
+    margin-top: 3%;
+    margin-left: 27%;
+    text-align: center;
+}
+.button_icon {
+    display: inline-flex;
+    padding: 0 24px;
+    height: 100%;
+    align-items: center;
+
+}
+.button_del{
+    margin-top: 3%;
+    margin-left: 30%;
+    text-align: center;
+}
+.button_icon_del{
+    display: inline-flex;
+    padding: 0 24px;
+    height: 100%;
+    align-items: center;
+
+}
+
+/* *{
+    box-sizing: border-box;
+}
+
+.box{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.search::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+img{
+    width: 100%;
+    height: 310px;
+}
+.search li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    padding: 10px 20px;
+}
+#MyCollection{
+    width: 18%;
+    color:#fff;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none; 
+    outline: none;
+    cursor: pointer;
+}
+.button{
+    color:rgb(96, 77, 142);
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+a{
+    color:rgb(96, 77, 142);
+} */

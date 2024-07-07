@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/collection.css">
+    <title> Memories | Collection </title>
+</head>
+<body>
+    <button id="MyCollection">
+        <a href="/users/home">
+            <h3>
+                My Collections
+            </h3>
+        </a>
+    </button>
+    <% if (locals.user) { %>
+        <form action="" id="create-memory" method="post" >
+            <input type="file" name="image" placeholder="Add images" multiple required>
+            <input type="hidden" id="collectionId" name="collectionId" value="<%= collectionId %>">
+            <input type="submit" id="submit" value="submit" onclick="createMemory()">
+        </form>
+    <% } %>
+    <div id="memory-list-container">
+        <ul id="memory-list" class="search">
+           
+        </ul>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/home_memory.js"></script>
+</body>
+</html>

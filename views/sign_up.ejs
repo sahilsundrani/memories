@@ -1,0 +1,32 @@
+<html>
+    <title>
+        Memories | Sign Up
+    </title>
+    <head>
+        <link rel="stylesheet" href="/css/sign_up.css">
+    </head>
+    <body>
+        <div class="sign-up">
+            <h1> 
+                Sign-Up
+            </h1>
+            <form action="/users/create" method="post">
+                <input type="text" name="name" id="name" class="input-box" placeholder="Enter your name" required>
+                <br>
+                <input type="email" name="email" id="email" class="input-box" placeholder="Enter your email" required>
+                <br>
+                <input type="password" name="password" id="password" class="input-box" placeholder="Enter your password" required>
+                <br>
+                <input type="password" name="confirm_password" id="confirm_password" class="input-box" placeholder="Re-enter your password" required>
+                <br>
+                <input type="checkbox" required> I agree to terms and services
+                <br>
+                <input type="submit" class="submit"value="submit">
+            </form>
+            <hr>
+                <p>Do you already have an account?</p>
+                <a href="/users/sign-in">Sign In</a>
+        </div>
+        
+    </body>
+</html> 
